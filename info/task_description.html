@@ -1,29 +1,73 @@
 <p>
-    <i>( Describe task in general )</i>
+    On the island our Robots have found the mysterious Boxes. After some examination Nicola have discover the
+    interesting
+    feature of these Boxes. If you place something in any of the Boxes, then you can take it from any Box.
+    Stephan wants to use this property for delivery of cargo across of the island.
+    He moves without loads twice faster than without it.
+    So Stephan can place the cargo while going to delivery point and take it later in other box.
 </p>
 
 <p>
-    Sum two passed ints
+    The map for delivery is presented as an array of strings, where:
+
 </p>
+<ul>
+    <li>
+        "W" is a wall
+    </li>
+    <li>
+        "B" is a box
+    </li>
+    <li>
+        "E" is an goal point.
+    </li>
+    <li>
+        "S" is a start point.
+    </li>
+</ul>
+<p>
+    Stephan move between neighbours cell in two minutes if he is loaded. Without it -- in one minute.
+    Loading and unloading of cargo in (out) the box takes one minute.
+    You should find the fastest way for cargo delivery (minimum time).
+</p>
+<p>
+    The route is a string, where each letter is an action.
+</p>
+
+<ul>
+    <li>
+        "U" -- Up (north)
+    </li>
+    <li>
+        "D" -- Down (south)
+    </li>
+    <li>
+        "L" -- Left (west)
+    </li>
+    <li>
+        "R" -- Right (east)
+    </li>
+    <li>
+        "B" -- Load or unload in (out) a box.
+    </li>
+
+</ul>
 
 <p style="text-align: center;">
     <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
     <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
 </p>
 
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> A map for delivery, a list of strings.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> The fastest route, a string.
 </p>
-
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
