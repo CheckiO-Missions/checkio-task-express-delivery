@@ -24,6 +24,10 @@
     <li>
         "S" is a start point.
     </li>
+    <li>
+        "." is an empty cell.
+    </li>
+
 </ul>
 <p>
     Stephan move between neighbours cell in two minutes if he is loaded. Without it -- in one minute.
@@ -54,8 +58,16 @@
 </ul>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
+    <img class="for_info_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="380px"/>
 </p>
 
 <p>
@@ -72,12 +84,11 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio(["S...","....","D.WD","..WE"]) #LLLDDD
+checkio(["S...","....","D..D","..WE"]) #DDBLLLBD
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
 </p>

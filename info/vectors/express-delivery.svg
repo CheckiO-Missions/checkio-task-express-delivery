@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200" height="880" viewBox="0, 0, 1200, 880">
+  <g id="Background">
+    <rect x="0" y="0" width="1200" height="880" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M80.5,80.5 L160.5,80.5 L160.5,160.5 L80.5,160.5 z" fill="#EBEDED"/>
+      <path d="M80.5,80.5 L160.5,80.5 L160.5,160.5 L80.5,160.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,80.5 L240.5,80.5 L240.5,160.5 L160.5,160.5 z" fill="#EBEDED"/>
+      <path d="M160.5,80.5 L240.5,80.5 L240.5,160.5 L160.5,160.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,80.5 L320.5,80.5 L320.5,160.5 L240.5,160.5 z" fill="#EBEDED"/>
+      <path d="M240.5,80.5 L320.5,80.5 L320.5,160.5 L240.5,160.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,80.5 L400.5,80.5 L400.5,160.5 L320.5,160.5 z" fill="#EBEDED"/>
+      <path d="M320.5,80.5 L400.5,80.5 L400.5,160.5 L320.5,160.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,160.5 L160.5,160.5 L160.5,240.5 L80.5,240.5 z" fill="#EBEDED"/>
+      <path d="M80.5,160.5 L160.5,160.5 L160.5,240.5 L80.5,240.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,160.5 L240.5,160.5 L240.5,240.5 L160.5,240.5 z" fill="#EBEDED"/>
+      <path d="M160.5,160.5 L240.5,160.5 L240.5,240.5 L160.5,240.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,160.5 L320.5,160.5 L320.5,240.5 L240.5,240.5 z" fill="#EBEDED"/>
+      <path d="M240.5,160.5 L320.5,160.5 L320.5,240.5 L240.5,240.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,160.5 L400.5,160.5 L400.5,240.5 L320.5,240.5 z" fill="#EBEDED"/>
+      <path d="M320.5,160.5 L400.5,160.5 L400.5,240.5 L320.5,240.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,240.5 L160.5,240.5 L160.5,320.5 L80.5,320.5 z" fill="#EBEDED"/>
+      <path d="M80.5,240.5 L160.5,240.5 L160.5,320.5 L80.5,320.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,240.5 L240.5,240.5 L240.5,320.5 L160.5,320.5 z" fill="#EBEDED"/>
+      <path d="M160.5,240.5 L240.5,240.5 L240.5,320.5 L160.5,320.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,240.5 L320.5,240.5 L320.5,320.5 L240.5,320.5 z" fill="#294270"/>
+      <path d="M240.5,240.5 L320.5,240.5 L320.5,320.5 L240.5,320.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,240.5 L400.5,240.5 L400.5,320.5 L320.5,320.5 z" fill="#EBEDED"/>
+      <path d="M320.5,240.5 L400.5,240.5 L400.5,320.5 L320.5,320.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,320.5 L160.5,320.5 L160.5,400.5 L80.5,400.5 z" fill="#EBEDED"/>
+      <path d="M80.5,320.5 L160.5,320.5 L160.5,400.5 L80.5,400.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,320.5 L240.5,320.5 L240.5,400.5 L160.5,400.5 z" fill="#EBEDED"/>
+      <path d="M160.5,320.5 L240.5,320.5 L240.5,400.5 L160.5,400.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,320.5 L320.5,320.5 L320.5,400.5 L240.5,400.5 z" fill="#294270"/>
+      <path d="M240.5,320.5 L320.5,320.5 L320.5,400.5 L240.5,400.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,320.5 L400.5,320.5 L400.5,400.5 L320.5,400.5 z" fill="#EBEDED"/>
+      <path d="M320.5,320.5 L400.5,320.5 L400.5,400.5 L320.5,400.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M120.5,150.5 C103.931,150.5 90.5,137.069 90.5,120.5 C90.5,103.931 103.931,90.5 120.5,90.5 C137.069,90.5 150.5,103.931 150.5,120.5 C150.5,137.069 137.069,150.5 120.5,150.5 z" fill="#FABA00"/>
+      <path d="M120.5,150.5 C103.931,150.5 90.5,137.069 90.5,120.5 C90.5,103.931 103.931,90.5 120.5,90.5 C137.069,90.5 150.5,103.931 150.5,120.5 C150.5,137.069 137.069,150.5 120.5,150.5 z" fill-opacity="0" stroke="#294270" stroke-width="6"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 120, 120)">
+      <tspan x="-12.788" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">S</tspan>
+    </text>
+    <path d="M108.061,250.5 L91,262.683 L102.797,273.015 L120,261.398 z M102.797,273.015 L120,284.633 L108.061,295.531 L91,283.348 z M137.203,273.016 L149,283.348 L131.939,295.531 L120,284.633 z M137.203,273.015 L120,261.398 L131.939,250.5 L149,262.683 z M132.009,297.844 L137.132,294.185 L137.132,298.287 L120.035,309.5 L102.938,298.287 L102.938,294.185 L108.061,297.844 L120.035,286.977 z" fill="#8FC7ED"/>
+    <path d="M348.061,250.5 L331,262.683 L342.797,273.015 L360,261.398 z M342.797,273.015 L360,284.633 L348.061,295.531 L331,283.348 z M377.203,273.016 L389,283.348 L371.939,295.531 L360,284.633 z M377.203,273.015 L360,261.398 L371.939,250.5 L389,262.683 z M372.009,297.844 L377.132,294.185 L377.132,298.287 L360.035,309.5 L342.938,298.287 L342.938,294.185 L348.061,297.844 L360.035,286.977 z" fill="#8FC7ED"/>
+    <text transform="matrix(1, 0, 0, 1, 360, 360)">
+      <tspan x="-16.395" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">E</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 739.9, 182.5)">
+      <tspan x="-259.9" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">"DD</tspan>
+      <tspan x="-178.987" y="13.5" font-family="Verdana" font-size="36" fill="#294270">BLULLDB</tspan>
+      <tspan x="-15.423" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">D" = 13 min</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 739.9, 262.5)">
+      <tspan x="-259.9" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">"LLLDDD" = 12 min</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 824.382, 112.442)">
+      <tspan x="-344.382" y="3.558" font-family="Verdana" font-size="36" fill="#294270">checkio(["S...","....","D.WD","..WE"])</tspan>
+    </text>
+    <g>
+      <path d="M80.5,480.5 L160.5,480.5 L160.5,560.5 L80.5,560.5 z" fill="#EBEDED"/>
+      <path d="M80.5,480.5 L160.5,480.5 L160.5,560.5 L80.5,560.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,480.5 L240.5,480.5 L240.5,560.5 L160.5,560.5 z" fill="#EBEDED"/>
+      <path d="M160.5,480.5 L240.5,480.5 L240.5,560.5 L160.5,560.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,480.5 L320.5,480.5 L320.5,560.5 L240.5,560.5 z" fill="#EBEDED"/>
+      <path d="M240.5,480.5 L320.5,480.5 L320.5,560.5 L240.5,560.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,480.5 L400.5,480.5 L400.5,560.5 L320.5,560.5 z" fill="#EBEDED"/>
+      <path d="M320.5,480.5 L400.5,480.5 L400.5,560.5 L320.5,560.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,560.5 L160.5,560.5 L160.5,640.5 L80.5,640.5 z" fill="#EBEDED"/>
+      <path d="M80.5,560.5 L160.5,560.5 L160.5,640.5 L80.5,640.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,560.5 L240.5,560.5 L240.5,640.5 L160.5,640.5 z" fill="#EBEDED"/>
+      <path d="M160.5,560.5 L240.5,560.5 L240.5,640.5 L160.5,640.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,560.5 L320.5,560.5 L320.5,640.5 L240.5,640.5 z" fill="#EBEDED"/>
+      <path d="M240.5,560.5 L320.5,560.5 L320.5,640.5 L240.5,640.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,560.5 L400.5,560.5 L400.5,640.5 L320.5,640.5 z" fill="#EBEDED"/>
+      <path d="M320.5,560.5 L400.5,560.5 L400.5,640.5 L320.5,640.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,640.5 L160.5,640.5 L160.5,720.5 L80.5,720.5 z" fill="#EBEDED"/>
+      <path d="M80.5,640.5 L160.5,640.5 L160.5,720.5 L80.5,720.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,640.5 L240.5,640.5 L240.5,720.5 L160.5,720.5 z" fill="#EBEDED"/>
+      <path d="M160.5,640.5 L240.5,640.5 L240.5,720.5 L160.5,720.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,640.5 L320.5,640.5 L320.5,720.5 L240.5,720.5 z" fill="#EBEDED"/>
+      <path d="M240.5,640.5 L320.5,640.5 L320.5,720.5 L240.5,720.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,640.5 L400.5,640.5 L400.5,720.5 L320.5,720.5 z" fill="#EBEDED"/>
+      <path d="M320.5,640.5 L400.5,640.5 L400.5,720.5 L320.5,720.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M80.5,720.5 L160.5,720.5 L160.5,800.5 L80.5,800.5 z" fill="#EBEDED"/>
+      <path d="M80.5,720.5 L160.5,720.5 L160.5,800.5 L80.5,800.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M160.5,720.5 L240.5,720.5 L240.5,800.5 L160.5,800.5 z" fill="#EBEDED"/>
+      <path d="M160.5,720.5 L240.5,720.5 L240.5,800.5 L160.5,800.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M240.5,720.5 L320.5,720.5 L320.5,800.5 L240.5,800.5 z" fill="#294270"/>
+      <path d="M240.5,720.5 L320.5,720.5 L320.5,800.5 L240.5,800.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M320.5,720.5 L400.5,720.5 L400.5,800.5 L320.5,800.5 z" fill="#EBEDED"/>
+      <path d="M320.5,720.5 L400.5,720.5 L400.5,800.5 L320.5,800.5 z" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M120.5,550.5 C103.931,550.5 90.5,537.069 90.5,520.5 C90.5,503.931 103.931,490.5 120.5,490.5 C137.069,490.5 150.5,503.931 150.5,520.5 C150.5,537.069 137.069,550.5 120.5,550.5 z" fill="#FABA00"/>
+      <path d="M120.5,550.5 C103.931,550.5 90.5,537.069 90.5,520.5 C90.5,503.931 103.931,490.5 120.5,490.5 C137.069,490.5 150.5,503.931 150.5,520.5 C150.5,537.069 137.069,550.5 120.5,550.5 z" fill-opacity="0" stroke="#294270" stroke-width="6"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 120, 520)">
+      <tspan x="-12.788" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">S</tspan>
+    </text>
+    <path d="M108.061,650.5 L91,662.683 L102.797,673.015 L120,661.398 z M102.797,673.015 L120,684.633 L108.061,695.531 L91,683.348 z M137.203,673.016 L149,683.348 L131.939,695.531 L120,684.633 z M137.203,673.015 L120,661.398 L131.939,650.5 L149,662.683 z M132.009,697.844 L137.132,694.185 L137.132,698.287 L120.035,709.5 L102.938,698.287 L102.938,694.185 L108.061,697.844 L120.035,686.977 z" fill="#8FC7ED"/>
+    <path d="M348.061,650.5 L331,662.683 L342.797,673.015 L360,661.398 z M342.797,673.015 L360,684.633 L348.061,695.531 L331,683.348 z M377.203,673.016 L389,683.348 L371.939,695.531 L360,684.633 z M377.203,673.015 L360,661.398 L371.939,650.5 L389,662.683 z M372.009,697.844 L377.132,694.185 L377.132,698.287 L360.035,709.5 L342.938,698.287 L342.938,694.185 L348.061,697.844 L360.035,686.977 z" fill="#8FC7ED"/>
+    <text transform="matrix(1, 0, 0, 1, 360, 760)">
+      <tspan x="-16.395" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">E</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 739.9, 582.5)">
+      <tspan x="-259.9" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">"DD</tspan>
+      <tspan x="-178.987" y="13.5" font-family="Verdana" font-size="36" fill="#294270">BLLLB</tspan>
+      <tspan x="-69.511" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">D" = 11 min</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 739.9, 662.5)">
+      <tspan x="-259.9" y="13.5" font-family="Verdana-Bold" font-size="36" fill="#294270">"LLLDDD" = 12 min</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 824.382, 524.5)">
+      <tspan x="-344.382" y="-8.5" font-family="Verdana" font-size="36" fill="#294270">checkio(["S...","....","D..D","..WE"])</tspan>
+      <tspan x="-344.382" y="35.5" font-family="Verdana" font-size="36" fill="#294270">		</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>
