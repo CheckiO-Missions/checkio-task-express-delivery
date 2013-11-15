@@ -7,17 +7,16 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": ["S...","....","D.WD","..WE"],
-            "answer": 12,
+            "input": ["S...", "....", "D.WD", "..WE"],
+            "answer": (["S...", "....", "D.WD", "..WE"], 12),
             "explanation": "LLLDDD"
         },
         {
-            "input": ["S...","....","D..D","..WE"],
-            "answer": 11,
+            "input": ["S...", "....", "D..D", "..WE"],
+            "answer": (["S...", "....", "D.WD", "..WE"], 11),
             "explanation": "DDBLLLBD"
         }
     ],

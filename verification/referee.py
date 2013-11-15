@@ -5,8 +5,46 @@ from checkio.referees import checkers
 
 from tests import TESTS
 
-def checker(min_times, route):
-    pass
+ACTIONS = {
+    "L": (0, -1),
+    "R": (0, 1),
+    "U": (-1, 0),
+    "D": (1, 0),
+    "B": (0, 0)
+}
+
+
+def checker(answer, route):
+    field, max_steps = answer
+    max_row, max_col = len(field), len(field[0])
+    if not isinstance(route, str):
+        return False, "The route is a string."
+    s_row, s_col = 0, 0
+    total_time = 0
+    hold_box = True
+    for step in route:
+        if step not in ACTIONS.keys():
+            return False, "Unknown action {0}".format(step)
+        if step == "B":
+            if hold_box:
+                if field[s_row][s_col] == "B":
+                    hold_box = False
+                    total_time += 1
+                    continue
+                else:
+                    return False, "Stephan broke the cargo".format(step)
+            else:
+                if field[s_row][s_col] == "B":
+                    hold_box = True
+                total_time += 1
+                continue
+        n_row, n_col = s_row + ACTIONS[step][0], s_col + ACTIONS[step][1],
+        total_time += 2 if hold_box else 1
+        if 0 <= n_row < max_row and 0 <= n_col < max_col and field[n_row][n_col] != "W":
+            s_row, s_col = n_row, n_col
+        if field[s_row][s_col] == "E" and hold_box:
+            return True, "Win"
+    return False, "The cargo is not delivered"
 
 
 api.add_listener(
