@@ -133,7 +133,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var timeText;
             var delay = 300;
 
-            this.createCanvas = function (field) {
+            var k = 0.33;
+
+            this.createCanvas = function (field, forTryit) {
                 fullSizeX = x0 * 2 + cellSize * field[0].length;
                 fullSizeY = y0 * 2 + cellSize * field.length + cellSize;
                 paper = Raphael(dom, fullSizeX, fullSizeY, 0, 0);
@@ -151,6 +153,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                         if (symb == "W") {
                             cell.attr("fill", colorBlue3);
                         }
+                        fieldSet.push(cell);
                         if (symb == "S") {
                             stephan.push(paper.circle(
                                 (c + 0.5) * cellSize + x0, (r + 0.5) * cellSize + y0, cellSize * sKoof).attr(attrStephan));
@@ -158,12 +161,14 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                                 paper.text((c + 0.5) * cellSize + x0, (r + 0.5) * cellSize + y0, "S").attr(attrStephanText)
                             );
                         }
-                        if (symb == "B") {
-                            var k = 0.33;
-                            var tr = "t" + ((c + 0.5) * cellSize + x0) + "," + ((r + 0.5) * cellSize + y0) + "s" + k;
+                        var tr = "t" + ((c + 0.5) * cellSize + x0) + "," + ((r + 0.5) * cellSize + y0) + "s" + k;
+                        if (forTryit || symb == "B") {
                             var b = paper.path(boxPath).attr(attrBox);
                             b.transform(tr);
                             boxSet.push(b);
+                            if (symb !== "B") {
+                                b.attr("fill-opacity", 0);
+                            }
                         }
                         if (symb == "E") {
                             paper.text((c + 0.5) * cellSize + x0, (r + 0.5) * cellSize + y0, "E").attr(attrExitText);
@@ -218,6 +223,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                             if (field[row][col] == "B") {
                                 holdBox = false;
                                 time += 1;
+                                stephan[0].animate({"fill": colorBlue1}, delay);
                                 boxSet.animate({"fill": colorBlue3}, delay, move);
                             }
                             else {
@@ -229,6 +235,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                                 holdBox = true;
                             }
                             time += 1;
+                            stephan[0].animate({"fill": colorOrange1}, delay);
                             boxSet.animate({"fill": colorBlue1}, delay, move);
                         }
                     }

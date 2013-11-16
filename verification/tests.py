@@ -16,7 +16,7 @@ TESTS = {
         },
         {
             "input": ["S...", "....", "B..B", "..WE"],
-            "answer": (["S...", "....", "B.WB", "..WE"], 11),
+            "answer": (["S...", "....", "B..B", "..WE"], 11),
             "explanation": "DDBLLLBD"
         }
     ],
