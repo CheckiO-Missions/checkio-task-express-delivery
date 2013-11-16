@@ -86,6 +86,51 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
         });
 
+        var $tryit;
+        var defaultMap = [
+            "S.W...",
+            "..WB..",
+            "..WW..",
+            "....B.",
+            "....W.",
+            "..B.BE"
+        ];
+        var tCanvas;
+        var data;
+        var bnCheck;
+
+        ext.set_console_process_ret(function (this_e, ret) {
+            var conv_ret = ret;
+            if (typeof(ret) === 'string') {
+                conv_ret = ret.replace(/\'/g, "");
+            }
+
+            setTimeout(function() {
+                tCanvas.unreset();
+                tCanvas.animateCanvas(data, conv_ret)
+            }, 600);
+            $tryit.find(".checkio-result").html("<br>" + ret);
+        });
+
+        ext.set_generate_animation_panel(function (this_e) {
+
+            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit')));
+            bnCheck = $tryit.find('.bn-check');
+
+            tCanvas = new ExpressDeliveryCanvas($tryit.find(".tryit-canvas")[0]);
+            tCanvas.createCanvas(defaultMap, true);
+            tCanvas.createFeedback();
+
+            bnCheck.click(function (e) {
+                data = tCanvas.getData();
+                tCanvas.reset();
+                this_e.sendToConsoleCheckiO(data);
+                e.stopPropagation();
+                return false;
+            });
+
+        });
+
         function ExpressDeliveryCanvas(dom) {
             var colorOrange4 = "#F0801A";
             var colorOrange3 = "#FA8F00";
@@ -135,6 +180,12 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
             var k = 0.33;
 
+            var fieldMap = [];
+
+            var resetFlag = false;
+
+            var obj = this;
+
             this.createCanvas = function (field, forTryit) {
                 fullSizeX = x0 * 2 + cellSize * field[0].length;
                 fullSizeY = y0 * 2 + cellSize * field.length + cellSize;
@@ -145,8 +196,10 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 timeText = paper.text(fullSizeX / 2, fullSizeY - cellSize / 2, "0").attr(attrTime);
 
                 for (var r = 0; r < field.length; r++) {
+                    var temp = [];
                     for (var c = 0; c < field[0].length; c++) {
                         var symb = field[r][c];
+                        temp.push(symb);
                         var cell = paper.rect(c * cellSize + x0, r * cellSize + y0, cellSize, cellSize);
                         cell.attr(attrCell);
                         cell.toBack();
@@ -173,8 +226,8 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                         if (symb == "E") {
                             paper.text((c + 0.5) * cellSize + x0, (r + 0.5) * cellSize + y0, "E").attr(attrExitText);
                         }
-
                     }
+                    fieldMap.push(temp);
                 }
             };
 
@@ -196,6 +249,12 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 var actionString = "LRDUB";
 
                 (function move() {
+                    if (resetFlag) {
+                        obj.reset();
+                        resetFlag = false;
+                        return false;
+                    }
+
                     i++;
                     stephan.toFront();
 
@@ -262,7 +321,59 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                     }
 
                 })();
+            };
+
+            this.createFeedback = function() {
+                var lRow = fieldMap.length;
+                var lCol = fieldMap[0].length;
+                var active = paper.rect(x0, y0, cellSize * lCol, cellSize * lRow).attr({"fill": colorBlue1, "fill-opacity": 0, "stroke-width": 0});
+                active.toFront();
+                var cycle = ".BW";
+                active.click(function(e){
+                    obj.reset();
+                    var col = Math.floor((e.offsetX - x0) / cellSize);
+                    var row = Math.floor((e.offsetY - y0) / cellSize);
+                    if ((col == 0 && row == 0) || (col == lCol-1 && row == lRow-1)) {
+                        return false;
+                    }
+                    var symb = fieldMap[row][col];
+                    if (symb == "W") {
+                        fieldSet[row * lCol + col].attr("fill-opacity", 0);
+                        fieldMap[row][col] = ".";
+                    }
+                    else if (symb == ".") {
+                        boxSet[row * lCol + col].attr("fill-opacity", 1);
+                        fieldMap[row][col] = "B";
+                    }
+                    else if (symb == "B") {
+                        fieldSet[row * lCol + col].attr({"fill": colorBlue3, "fill-opacity": 1});
+                        boxSet[row * lCol + col].attr("fill-opacity", 0);
+                        fieldMap[row][col] = "W";
+                    }
+
+                });
+            };
+
+            this.getData = function() {
+                var res = [];
+                for (var i = 0; i < fieldMap.length; i++) {
+                    res.push(fieldMap[i].join(""));
+                }
+                return res;
+            };
+
+            this.reset = function() {
+                resetFlag = true;
+                stephan.transform("");
+                boxSet.attr("fill", colorBlue1);
+                stephan[0].attr("fill", colorOrange1);
+                return false;
+            };
+
+            this.unreset = function() {
+                resetFlag = false;
             }
+
         }
     }
 );
