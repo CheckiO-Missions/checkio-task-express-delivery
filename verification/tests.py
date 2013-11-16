@@ -10,13 +10,13 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": ["S...", "....", "D.WD", "..WE"],
-            "answer": (["S...", "....", "D.WD", "..WE"], 12),
+            "input": ["S...", "....", "B.WB", "..WE"],
+            "answer": (["S...", "....", "B.WB", "..WE"], 12),
             "explanation": "LLLDDD"
         },
         {
-            "input": ["S...", "....", "D..D", "..WE"],
-            "answer": (["S...", "....", "D.WD", "..WE"], 11),
+            "input": ["S...", "....", "B..B", "..WE"],
+            "answer": (["S...", "....", "B.WB", "..WE"], 11),
             "explanation": "DDBLLLBD"
         }
     ],

@@ -15,7 +15,7 @@ ACTIONS = {
 
 
 def checker(answer, route):
-    field, max_steps = answer
+    field, max_time = answer
     max_row, max_col = len(field), len(field[0])
     if not isinstance(route, str):
         return False, "The route is a string."
@@ -23,6 +23,7 @@ def checker(answer, route):
     total_time = 0
     hold_box = True
     for step in route:
+
         if step not in ACTIONS.keys():
             return False, "Unknown action {0}".format(step)
         if step == "B":
@@ -40,10 +41,18 @@ def checker(answer, route):
                 continue
         n_row, n_col = s_row + ACTIONS[step][0], s_col + ACTIONS[step][1],
         total_time += 2 if hold_box else 1
-        if 0 <= n_row < max_row and 0 <= n_col < max_col and field[n_row][n_col] != "W":
-            s_row, s_col = n_row, n_col
+        if 0 > n_row or n_row >= max_row or 0 > n_col or n_row >= max_col:
+            return False, "We've lost Stephan."
+        if field[n_row][n_col] == "W":
+            return False, "Stephan fell in water."
+        s_row, s_col = n_row, n_col
         if field[s_row][s_col] == "E" and hold_box:
-            return True, "Win"
+            if total_time <= max_time:
+                return True, "Win"
+            else:
+                break
+    if total_time >= max_time:
+        return False, "You can deliver the cargo faster."
     return False, "The cargo is not delivered"
 
 
