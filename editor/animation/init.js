@@ -116,7 +116,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var attrCell = {"stroke": colorBlue4, "stroke-width": 2};
             var attrStephan = {"stroke": colorBlue4, "stroke-width": 3, "fill": colorOrange1};
             var attrStephanText = {"stroke": colorBlue4, "font-size": cellSize * 0.5, "font-family": "Verdana", "font-weight": "bold"};
-            var attrExitText = {"stroke": colorOrange4, "fill": colorOrange4, "font-size": cellSize * 0.5, "font-family": "Verdana", "font-weight": "bold"};
+            var attrExitText = {"stroke": colorOrange4, "fill": colorOrange4, "font-size": cellSize * 0.6, "font-family": "Verdana", "font-weight": "bold"};
             var attrTime = {"stroke": colorBlue4, "font-size": cellSize * 0.7, "font-family": "Verdana", "font-weight": "bold"};
             var attrBox = {"stroke-width": 0, "fill": colorBlue1};
 

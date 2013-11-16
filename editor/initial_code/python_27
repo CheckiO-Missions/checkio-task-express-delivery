@@ -3,5 +3,5 @@ def checkio(field_map):
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    checkio([u"S...", u"....", u"D.WD", u"..WE"]) #RRRDDD
-    checkio([u"S...", u"....", u"D..D", u"..WE"]) #DDBRRRBD
+    checkio([u"S...", u"....", u"B.WB", u"..WE"])  # RRRDDD
+    checkio([u"S...", u"....", u"B..B", u"..WE"])  # DDBRRRBD
