@@ -105,7 +105,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 conv_ret = ret.replace(/\'/g, "");
             }
 
-            setTimeout(function() {
+            setTimeout(function () {
                 tCanvas.unreset();
                 tCanvas.animateCanvas(data, conv_ret)
             }, 600);
@@ -323,17 +323,24 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 })();
             };
 
-            this.createFeedback = function() {
+            this.createFeedback = function () {
                 var lRow = fieldMap.length;
                 var lCol = fieldMap[0].length;
                 var active = paper.rect(x0, y0, cellSize * lCol, cellSize * lRow).attr({"fill": colorBlue1, "fill-opacity": 0, "stroke-width": 0});
                 active.toFront();
                 var cycle = ".BW";
-                active.click(function(e){
+                active.click(function (e, x, y) {
                     obj.reset();
-                    var col = Math.floor((e.offsetX - x0) / cellSize);
-                    var row = Math.floor((e.offsetY - y0) / cellSize);
-                    if ((col == 0 && row == 0) || (col == lCol-1 && row == lRow-1)) {
+                    var offX = e.offsetX;
+                    var offY = e.offsetY;
+                    if (typeof offX === "undefined" || typeof offY === "undefined") {
+                        var targetOffset = $(e.target).offset();
+                        offX = e.pageX - targetOffset.left;
+                        offY = e.pageY - targetOffset.top;
+                    }
+                    var col = Math.floor((offX - x0) / cellSize);
+                    var row = Math.floor((offY - y0) / cellSize);
+                    if ((col == 0 && row == 0) || (col == lCol - 1 && row == lRow - 1)) {
                         return false;
                     }
                     var symb = fieldMap[row][col];
@@ -354,7 +361,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 });
             };
 
-            this.getData = function() {
+            this.getData = function () {
                 var res = [];
                 for (var i = 0; i < fieldMap.length; i++) {
                     res.push(fieldMap[i].join(""));
@@ -362,7 +369,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 return res;
             };
 
-            this.reset = function() {
+            this.reset = function () {
                 resetFlag = true;
                 stephan.transform("");
                 boxSet.attr("fill", colorBlue1);
@@ -370,7 +377,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 return false;
             };
 
-            this.unreset = function() {
+            this.unreset = function () {
                 resetFlag = false;
             }
 
