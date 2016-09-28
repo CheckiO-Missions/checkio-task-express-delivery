@@ -1,0 +1,116 @@
+<p>
+    Nos trois robots ont trouvé quelques boîtes mystérieuses sur l'île.
+    Nicola découvrit après examen que ces boîtes ont une fonctionnalité intéressante :<br>
+    si on place un objet à l'intérieur de l'une d'elles, on peut le récupérer dans une autre boîte.<br>
+    Stephan envisage d'utiliser ces boîtes pour la livraison rapide de sa cargaison à travers l'île, en déplaçant
+    les charges deux fois plus vite :
+    Stephan peut placer la cargaison dans une boîte et la récupérer plus tard au point de livraison.<br>
+    Sur la carte, il y a des cellules d'eau que Stephan ne peut pas traverser, mais ceci mis à part, ces boîtes
+    vont grandement lui faciliter la tâche.
+</p>
+
+<p>
+    La carte pour la livraison se présente sous la forme d'un tableau de chaînes de caractères, où :
+</p>
+<ul>
+    <li>
+        "W" représente l'eau ("W" pour "water" en anglais) (cellule fermée)
+    </li>
+    <li>
+        "B" représente une boîte ("B" pour "box" en anglais)
+    </li>
+    <li>
+        "E" représente le point cible ("E" pour "end" en anglais)
+    </li>
+    <li>
+        "S" est le point de départ ("S" pour "start" en anglais)
+    </li>
+    <li>
+        "." est une cellule vide
+    </li>
+
+</ul>
+<p>
+    Stephan de déplace entre deux cellules voisines en deux minutes s'il porte une charge.
+    Sans aucune charge à porter, il ne met qu'une minute.<br>
+    Il lui faut également une minute pour charger une cargaison dans une boîte, 
+    ou décharger une cargaison depuis une boîte.<br>
+    Votre mission est de déterminer la façon la plus rapide (c'est à dire qui demande un minimum de temps)
+    d'effectuer la livraison de la cargaison.
+</p>
+<p>
+    Le parcours est représenté par une chaîne de caractères, où chaque lettre définit une action :
+</p>
+
+<ul>
+    <li>
+        "U" (vers le haut, le nord -- "up" en anglais)
+    </li>
+    <li>
+        "D" (vers le bas, le sud -- "down" en anglais)
+    </li>
+    <li>
+        "L" (vers la gauche, l'ouest -- "left" en anglais)
+    </li>
+    <li>
+        "R" (vers la droite, l'est -- "right" en anglais)
+    </li>
+    <li>
+        "B" (chargement dans une boîte ou déchargement depuis une boîte)
+    </li>
+</ul>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="380px"/>
+</p>
+
+<p>
+    <strong>Input: </strong> 
+    Une carte pour une livraison, comme liste de chaîne de caractères.
+</p>
+
+<p>
+    <strong>Output: </strong> L'itinéraire le plus rapide, comme chaîne de caractères.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(["S...","....","B.WB","..WE"]) #RRRDDD
+checkio(["S...","....","B..B","..WE"]) #DDBRRRBD
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Application :</strong>
+    Cette mission ressemble à celle de "Open labyrinth", mais ici les différents mouvements ont des coûts différents.
+    Pour résoudre ce défi, vous aller apprendre des algorithmes utilisés en "pathfinding" (recherche de plus court chemin)
+    et en parcours sur des graphes.<br>
+    Par exemple : dans des jeux de stratégie ou des jeux de rôles, une pièce d'un joueur peut 
+    se déplacer à des vitesses différentes selon sa position sur le plateau de jeu.
+    </p>
+
+
+<p>
+    <strong>Préconditions:</strong>
+    0 < rows < 10<br>
+    0 < columns < 10<br>
+    &forall; x,y ∈ coordinates : 0 &le; x,y &le; 10<br>
+</p>
+
+<p class="for_info_only">
+    <strong>Comment utiliser TryIt: </strong><br>
+    <iframe width="640" height="360" src="//www.youtube.com/embed/7wqBkpwkWfg" frameborder="0" allowfullscreen></iframe>
+</p>
