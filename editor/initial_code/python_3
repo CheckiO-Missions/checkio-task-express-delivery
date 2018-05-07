@@ -57,3 +57,4 @@ if __name__ == '__main__':
 
     assert check_solution(checkio, 12, ["S...", "....", "B.WB", "..WE"]), "1st Example"
     assert check_solution(checkio, 11, ["S...", "....", "B..B", "..WE"]), "2nd example"
+    print("Coding complete? Click 'Check' to earn cool rewards!")
