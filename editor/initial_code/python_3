@@ -1,4 +1,6 @@
-def checkio(field_map):
+from typing import List
+
+def checkio(field_map: List[str]):
     return "RRRDDD"
 
 if __name__ == '__main__':
