@@ -4,6 +4,9 @@ def checkio(field_map: List[str]) -> str:
     return "RRRDDD"
 
 if __name__ == '__main__':
+    print("Example:")
+    print(checkio(["S...", "....", "B.WB", "..WE"]))
+
     #This part is using only for self-checking and not necessary for auto-testing
     ACTIONS = {
         "L": (0, -1),
