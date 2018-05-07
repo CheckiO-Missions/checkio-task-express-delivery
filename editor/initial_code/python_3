@@ -1,7 +1,12 @@
-def checkio(field_map):
+from typing import List
+
+def checkio(field_map: List[str]) -> str:
     return "RRRDDD"
 
 if __name__ == '__main__':
+    print("Example:")
+    print(checkio(["S...", "....", "B.WB", "..WE"]))
+
     #This part is using only for self-checking and not necessary for auto-testing
     ACTIONS = {
         "L": (0, -1),
@@ -55,3 +60,4 @@ if __name__ == '__main__':
 
     assert check_solution(checkio, 12, ["S...", "....", "B.WB", "..WE"]), "1st Example"
     assert check_solution(checkio, 11, ["S...", "....", "B..B", "..WE"]), "2nd example"
+    print("Coding complete? Click 'Check' to earn cool rewards!")
