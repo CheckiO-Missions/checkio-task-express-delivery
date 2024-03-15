@@ -1,0 +1,114 @@
+<p>
+    Unsere drei Roboter haben auf der Insel ein paar mysteriöse Kisten gefunden. Nach einiger Untersuchung entdeckte Nicola, dass diese
+    kisten eine interessante Eigenschaft haben. Wenn Sie etwas in eine dieser Boxen legen, können Sie es aus jeder anderen Box wieder herausholen.
+    Stephan meint, dass dies eine schnelle Lieferung von Fracht über die Insel ermöglicht und die Lasten doppelt so schnell transportiert werden können.
+    Stephan kann die Fracht in eine Kiste legen und sie später am Lieferort abholen.
+    Auf der Karte gibt es Wasserzellen, die Stephan nicht passieren kann, aber sonst machen diese Kisten seine Aufgabe sehr viel
+    erleichtern.
+</p>
+
+<p>
+    Die Karte für die Lieferung wird als eine Reihe von Strings dargestellt, wobei:
+
+</p>
+<ul>
+    <li>
+        "W" ist ein Wasser (geschlossene Zelle)
+    </li>
+    <li>
+        "B" ist eine Schachtel
+    </li>
+    <li>
+        "E" ist ein Zielpunkt.
+    </li>
+    <li>
+        "S" ist ein Startpunkt.
+    </li>
+    <li>
+        "." ist eine leere Zelle.
+    </li>
+
+</ul>
+<p>
+    Stephan bewegt sich zwischen benachbarten Zellen in zwei Minuten, wenn er eine Ladung trägt. Ohne Handgepäck benötigt er nur
+    eine Minute.
+    Das Be- und Entladen der Fracht in die (und aus der) Box dauert eine Minute.
+    Sie sollten den schnellsten Weg für die Lieferung der Fracht finden (minimale Zeit).
+</p>
+<p>
+    Die Route ist eine Zeichenkette, bei der jeder Buchstabe für eine Aktion steht.
+</p>
+
+<ul>
+    <li>
+        "U" - Nach oben (Norden)
+    </li>
+    <li>
+        "D" -- Nach unten (Süden)
+    </li>
+    <li>
+        "L" -- Links (Westen)
+    </li>
+    <li>
+        "R" -- Rechts (Osten)
+    </li>
+    <li>
+        "B - Einladen oder Entladen einer Kiste (aus einer Kiste).
+    </li>
+
+</ul>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="380px"/>
+</p>
+
+<p>
+   <strong>Eingabe: </strong> Eine Karte zur Übergabe als Liste von Strings.
+</p>
+
+<p>
+   <strong>Ausgabe: </strong> Die schnellste Route als String.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiel:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(["S...","....","B.WB","..WE"]) #RRRDDD
+checkio(["S...","....","B..B","..WE"]) #DDBRRRBD
+    </pre>
+</div>
+
+<p class="for_info_only">
+   <strong>Wie es verwendet wird: </strong>
+    Diese Aufgabe ähnelt dem "Offenen Labyrinth", aber hier haben wir verschiedene Kosten für die Züge.
+    Anhand dieser Aufgabe lernen Sie Algorithmen kennen, die bei der Wegfindung und der Durchquerung von Graphen verwendet werden.
+    Ein Beispiel: In einigen Strategie- oder Rollenspielen kann sich eine Einheit mit unterschiedlicher Geschwindigkeit auf verschiedenen Terrains bewegen.
+
+</p>
+
+
+<p>
+   <strong>Vorbedingung:</strong>
+    0 &lt; Zeilen &lt; 10<br>
+    0 &lt; Spalten &lt; 10<br>
+    &forall; x,y ∈ Koordinaten: 0 &lt; x,y &lt; 10<br>
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="640" height="360" src="//www.youtube.com/embed/7wqBkpwkWfg" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
