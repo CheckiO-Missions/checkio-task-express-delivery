@@ -1,0 +1,116 @@
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p>
+    我们的三个机器人在岛上发现了几个神秘的盒子。经过一番检查，尼古拉发现这些
+    这些盒子有一个有趣的功能。如果你在其中一个箱子里放了东西，你就可以从其他任何箱子里再取出来。
+    斯蒂芬认为，这样就可以在岛上快速运送货物，使货物运输速度提高一倍。
+    斯蒂芬可以把货物放在一个箱子里，然后再到交货地点取货。
+    地图上有一些斯蒂芬无法通过的水牢，但如果有了这些箱子，他的任务就会轻松很多。
+    更轻松。
+</p>
+
+<p>
+    交货地图以字符串数组的形式显示，其中
+
+</p>
+<ul>
+    <li>
+        "W "表示水（封闭式）。
+    </li>
+    <li>
+        "B" 是盒子
+    </li>
+    <li>
+        "E" 是一个目标点。
+    </li>
+    <li>
+        S "是起始点。
+    </li>
+    <li>
+        ". "为空单元格。
+    </li>
+
+</ul>
+<p>
+    如果斯蒂芬带着行李，两分钟内就能在相邻的牢房之间移动。如果不带任何随身行李，他只
+    分钟。
+    将货物装入（和取出）箱子需要一分钟。
+    您应该找到最快的货物运送方式（最短时间）。
+</p>
+<p>
+    路线是一个字符串，每个字母代表一个动作。
+</p>
+
+<ul>
+    <li>
+        "U" -- 向上（北）
+    </li>
+    <li>
+        "D" - 下（南）
+    </li>
+    <li>
+        "L" -- 左（西）
+    </li>
+    <li>
+        "R" -- 右（东）
+    </li>
+    <li>
+        "B" -- 装（卸）箱。
+    </li>
+
+</ul>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="380px"/>
+</p>
+
+<p>
+   <strong>输入： </strong> 以字符串列表形式交付的地图。
+</p>
+
+<p>
+   <strong>输出： </strong> 以字符串形式显示的最快路线。
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>示例</strong>
+    </p>
+    <pre class="brush: python">
+checkio(["S...","....","B.WB","..WE"]) #RRRDDD
+checkio(["S...","....","B..B","..WE"]) #DDBRRRBD
+    </pre>
+</div>
+
+<p class="for_info_only">
+   <strong>使用方法 </strong>
+    这个问题与 "开放式迷宫 "类似，但这里有不同的移动成本。
+    通过这个任务，你可以学习寻路和图形遍历中使用的算法。
+    例如：在一些战略或角色扮演游戏中，一个单位在不同地形上的移动速度是不同的。
+
+</p>
+
+
+<p>
+   <strong>前提条件是</strong>
+    0 &lt; 行 &lt; 10<br>
+    0 &lt; 列 &lt; 10<br>
+    &forall; x,y∈ 坐标 ：0 &lt; x,y &lt; 10<br>
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="640" height="360" src="//www.youtube.com/embed/7wqBkpwkWfg" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
