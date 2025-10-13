@@ -1,0 +1,116 @@
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p>
+    Nasze trzy roboty znalazły na wyspie kilka tajemniczych skrzyń. Po pewnym czasie Nicola odkrył, że te
+    mają interesującą cechę. Jeśli umieści się coś w jednej z nich, można to odzyskać z dowolnej innej skrzyni.
+    Stephan doszedł do wniosku, że pozwala to na szybkie dostarczanie ładunków przez wyspę, przenosząc je dwa razy szybciej.
+    Stephan może umieścić ładunek w jednej skrzyni i odebrać go później w punkcie dostawy.
+    Na mapie znajdują się cele wodne, których Stephan nie może ominąć, ale te skrzynie znacznie ułatwią mu zadanie
+    zadanie.
+</p>
+
+<p>
+    Mapa dostawy jest przedstawiona jako tablica ciągów, gdzie:
+
+</p>
+<ul>
+    <li>
+        "W" to woda (zamknięta komórka)
+    </li>
+    <li>
+        "B" oznacza pudełko
+    </li>
+    <li>
+        "E" to punkt docelowy.
+    </li>
+    <li>
+        "S" oznacza punkt początkowy.
+    </li>
+    <li>
+        "." oznacza pustą komórkę.
+    </li>
+
+</ul>
+<p>
+    Stephan przemieszcza się między sąsiednimi celami w ciągu dwóch minut, jeśli przewozi ładunek. Bez bagażu podręcznego potrzebuje tylko
+    potrzebuje tylko jednej minuty.
+    Załadunek i rozładunek ładunku do (i ze) skrzyni zajmuje jedną minutę.
+    Proszę znaleźć najszybszy sposób dostarczenia ładunku (minimalny czas).
+</p>
+<p>
+    Trasa to ciąg znaków, w którym każda litera oznacza akcję.
+</p>
+
+<ul>
+    <li>
+        "U" - W górę (północ)
+    </li>
+    <li>
+        "D" - W dół (południe)
+    </li>
+    <li>
+        "L" -- W lewo (zachód)
+    </li>
+    <li>
+        "R" -- Prawo (wschód)
+    </li>
+    <li>
+        "B" -- Załadunek lub rozładunek do (z) skrzyni.
+    </li>
+
+</ul>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="express-delivery"
+         src="{{MEDIA}}express-delivery.png"
+         alt="express-delivery"
+         width="380px"/>
+</p>
+
+<p>
+   <strong>Wejście: </strong> Mapa do dostarczenia jako lista ciągów znaków.
+</p>
+
+<p>
+   <strong>Dane wyjściowe: </strong> Najszybsza trasa jako ciąg znaków.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Przykład:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(["S...","....","B.WB","..WE"]) #RRRDDD
+checkio(["S...","....","B..B","..WE"]) #DDBRRRBD
+    </pre>
+</div>
+
+<p class="for_info_only">
+   <strong>Sposób użycia: </strong>
+    Ten problem jest podobny do "Otwartego labiryntu", ale tutaj mamy różne koszty ruchów.
+    Korzystając z tego zadania, nauczą się Państwo algorytmów wykorzystywanych w odnajdywaniu ścieżek i przemierzaniu grafów.
+    Na przykład: w niektórych grach strategicznych lub fabularnych jednostka może poruszać się z różną prędkością po różnych terenach.
+
+</p>
+
+
+<p>
+   <strong>Warunek wstępny:</strong>
+    0 &lt; wiersze &lt; 10<br>
+    0 &lt; kolumny &lt; 10<br>
+    &forall; x,y ∈ współrzędne: 0 &lt; x,y &lt; 10<br>
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="640" height="360" src="//www.youtube.com/embed/7wqBkpwkWfg" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
